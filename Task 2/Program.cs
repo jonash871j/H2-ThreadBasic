@@ -14,8 +14,9 @@ class Program
             Thread.Sleep(1000);
 
             // **** Threads sleep answer 
-            // Genrally it's a bad idea to use thread sleep and
-            // it should definitely be avoided in the main scope.
+            // Thread sleep can be used in any thread if it makes sense.
+            // But you should definitely avoid to use it in the main thread 
+            // to avoid your program locking up
         }
     }
 

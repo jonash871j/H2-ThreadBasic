@@ -12,7 +12,7 @@ class Program
             currentCharacter = Console.ReadKey().KeyChar;
         }
     }
-    static void LogicThread()
+    static void OutputThread()
     {
         while(true)
         {
@@ -26,8 +26,8 @@ class Program
         // Adds the InputThread the first thread delegate
         Thread inputThread = new Thread(InputThread);
 
-        // Adds the LogicThread the second thread delegate
-        Thread logicThread = new Thread(LogicThread);
+        // Adds the OutputThread the second thread delegate
+        Thread logicThread = new Thread(OutputThread);
 
         // Starts the threads
         inputThread.Start();
